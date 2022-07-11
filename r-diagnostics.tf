@@ -1,8 +1,7 @@
 module "vm_logs" {
   for_each = toset(var.use_legacy_monitoring_agent ? ["enabled"] : [])
 
-  source  = "claranet/vm-logs/azurerm"
-  version = "4.1.0"
+  source = "git@github.com:taoufik07/terraform-azurerm-vm-logs?ref=logs/templatefile"
 
   environment = var.environment
   stack       = var.stack
