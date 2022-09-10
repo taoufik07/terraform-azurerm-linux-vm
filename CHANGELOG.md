@@ -1,3 +1,8 @@
+# Unreleased
+
+Changed
+  * GH-3: Use dcr association resource instead of az rest call
+
 # v6.3.1 - 2022-08-19
 
 Fixed
